@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This part sets up the page so the browser knows how to read it -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now | Hot Beans Web</title>
+    <meta name="description" content="Hot Beans Web careers website for trainee web developers.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- This is the top part of the website with the logo and menu links -->
+<header>
+    <nav class="navbar">
+        <div class="logo"><span class="logo-icon">♨</span> Hot Beans Web</div>
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profiles.html">Trainee Profiles</a></li>
+            <li><a href="jobs.html">Job Roles</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="apply.html">Apply Now</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+<!-- This section is the apply page where people can fill in the job form -->
+<section class="page-section form-section">
+    <h1>Apply Now</h1>
+    <p class="lead">Fill in the form below to apply for a trainee position at Hot Beans Web.</p>
+
+    <form id="applicationForm" class="application-form">
+        <!-- These boxes ask the person for their name, email and phone number -->
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" placeholder="e.g. Sam Malekghasemi">
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" placeholder="e.g. john@email.com">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="e.g. 07123 456789">
+
+        <!-- This lets the person pick which job role they want to apply for -->
+        <label for="role">Job Role *</label>
+        <select id="role">
+            <option value="">Select a job role</option>
+            <option value="front-end">Trainee Front-End Developer</option>
+            <option value="full-stack">Trainee Full-Stack Developer</option>
+            <option value="ux-ui">Trainee UX/UI Developer</option>
+        </select>
+
+        <!-- This text box lets the person write why they want the job -->
+        <label for="message">Why do you want to work at Hot Beans Web?</label>
+        <textarea id="message" rows="6" placeholder="Tell us a bit about yourself and why you're interested..."></textarea>
+
+        <!-- This button sends the form when the person has finished it -->
+        <button type="submit" class="btn primary submit-btn">Submit Application</button>
+        <p id="formMessage"></p>
+    </form>
+</section>
+</main>
+<!-- This is the bottom part of the page with copyright and course info -->
+<footer>
+    <p>© 2025 Hot Beans Web. All rights reserved.</p>
+    <p>Built for BTEC Unit 15 – Website Development</p>
+</footer>
+<!-- This connects the JavaScript file for the menu and form message -->
+<script src="script.js"></script>
+</body>
+</html>
